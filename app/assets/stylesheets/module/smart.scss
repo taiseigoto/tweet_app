@@ -4,10 +4,14 @@
 		.header__icon{
 			display: none;
 		}
+	.header__right{
+		display: none;
+	}
 	}
 	.main-content {
 	background-color:  #e6ecf0;
-	width: 100%;
+	width: 400px;
+
 	.content-prof{
 		display: none;
 	}
@@ -21,6 +25,10 @@
 	.card{
 		width: 400px;
 		margin-top: 0;
+		.user-menu{
+		img {
+			}
+		}
 	}
 
 	
