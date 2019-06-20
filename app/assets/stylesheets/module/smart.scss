@@ -53,9 +53,10 @@
 	.modal-dialog{
 		.modal-content{
 	.modal-body {
-		textarea{
+		#tweet_text{
 			width: 395px!important;
 			height: 150px;
+			resize: none;
 				}
 	 		}
 		}
