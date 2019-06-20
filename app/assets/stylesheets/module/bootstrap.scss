@@ -1,0 +1,63 @@
+.modal-content{
+	height: 270px;
+	z-index: 100;
+	display: block;
+	.modal-header{
+			background-color: #55c500;
+			height: 50px;
+		h4.modal-title{
+			font-size: 25px;
+			font-weight: bold;
+			color: white;
+			line-height: 20px;
+		}
+		}
+		.modal-body{
+			height: 150px;
+			border-radius: 20px;
+			textarea#tweet_text{
+				height: 150px;
+				width: 460px;
+				border-radius: 15px;
+				padding-top: 5px;
+				border-width: 1px;
+				border: 1px solid #ccc;
+			}
+			textarea#tweet_text:focus {
+				outline: 0;
+			}			
+			.hidden{
+				display: none;
+			}
+			.send_btn{
+				height: 30px;
+				border-radius: 15px;
+				background-color: #55c500;
+				color: white;
+				font-weight: bold;
+				border:none;
+				float: right;
+				margin-right: 30px;
+				margin-top: 5px;
+			}
+			i{
+				font-size: 30px;
+				padding-left: 20px;
+				color: #55c500;
+				margin-top: 5px;
+			}
+		}
+		.modal-footer{
+			height: 30px;
+			.btn-primary{
+				height: 30px;
+				width: 60px;
+				font-weight: bold;
+				background-color: #55c500;
+				border-color: #55c500;
+			}
+			.btn{
+				padding: auto;
+			}
+		}
+  }

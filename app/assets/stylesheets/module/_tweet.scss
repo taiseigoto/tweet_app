@@ -1,0 +1,71 @@
+.card{
+	height: 100%;
+	min-height: 300px;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 10px;
+	display:inline-block;
+	.user-menu{
+		display: flex;
+		align-items: center;
+	img{
+		height: 65px;
+		width: 65px;
+		border-radius: 50%;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.user-menu__name{
+		font-weight: bold;
+		padding-left: 10px;
+		padding-top: 15px;
+	 }
+	 .user-menu__time{
+		 color: #657786;
+		 padding-left: 25px;
+		 font-size: 12px;
+		 margin-top: 17px;
+	 }
+	 .follows{
+		 background-color: #55c500;
+		 border-radius: 10px;
+		 margin-top: 17px;
+		 width: 70px;
+		 margin-left: 30px;
+		 font-size: 5px;
+		 color: white;
+		 font-weight: bold;
+		 border:none;
+	 }
+	 .follow-now{
+		background-color: #55c500;
+		border-radius: 10px;
+		margin-top: 17px;
+		width: 70px;
+		margin-left: 30px;
+		font-size: 5px;
+		color: white;
+		font-weight: bold;
+		border:none;
+	 }
+	}
+	.card-body{
+		padding-bottom: 0;
+		position: relative;
+		img{
+			position: absolute;
+			top: 0;
+			right: 15px;
+			width: 330px;
+			height: 180px;
+			padding-left: 60px;
+			padding-right: 30px;
+		}
+		.blockquote{
+			padding-left: 15px;
+			p{
+				font-size: 15px;
+			}
+		}
+	}
+}

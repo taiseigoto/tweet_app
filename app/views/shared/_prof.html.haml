@@ -1,0 +1,20 @@
+.content__content-menu
+	.content__content-menu__user__menu
+		.content__content-menu__user__menu__ava
+			= image_tag @users.avatar
+		.content__content-menu__user__menu__name
+			= @users.name
+	.content__content-menu__follow
+		%ul
+			%li 
+				Tweets
+				= link_to user_path(@users.id), class:'num' do
+					= @users.tweets.count
+			%li
+				Following
+				.num
+					= @users.followings.count
+			%li 
+				Followers
+				.num
+					= @users.followers.count

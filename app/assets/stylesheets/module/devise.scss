@@ -1,0 +1,48 @@
+.field-box{
+	width: 400px;
+	height: 100%;
+	margin: 0 auto;
+	h2{
+		padding-top: 150px;
+		padding-bottom: 10px;
+		font-weight: bold;
+		color: #55c500;
+	}	
+form{
+		font-weight: bold;
+	.field{
+		input{
+			margin-bottom: 5px;
+			width: 350px;
+			height: 35px;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+			}
+		input:focus {
+			outline: 0;
+		 }
+			}
+	.field-picture{
+		padding-top: 15px;
+		#user_avatar{
+			border: none;
+			border-radius: 15px;
+			background-color: #55c500;
+			font-weight: bold;
+			width: 350px;
+			}
+		}
+	}
+			.actions{
+				input{
+					margin-top: 20px;
+					height: 35px;
+					width: 350px;
+					background-color: #55c500;
+					border: none;
+					border-radius: 10px;
+					font-weight: bold;
+					color: white;
+				}
+		}
+	}

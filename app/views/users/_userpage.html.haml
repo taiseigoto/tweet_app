@@ -1,0 +1,51 @@
+.header
+  .header__icon
+    %i.fas.fa-frog
+  .header__left
+    - if user_signed_in?
+      %ul
+        %li 
+          = link_to root_path, class:'user-menu'do
+            Home
+          %i.fas.fa-home
+        %li 
+          = link_to root_path, class:'user-menu' do
+            News
+          %i.far.fa-comments
+        %li 
+          = link_to edit_user_registration_path, class:'user-menu' do
+            Edit
+          %i.fas.fa-user-alt
+        %li 
+          = link_to destroy_user_session_path, method: :delete,class:'user-menu' do
+            Logout
+          %i.fas.fa-sign-out-alt
+    - else
+      %ul
+        %li 
+          = link_to new_user_session_path, class:'user-menu'do
+            Home
+          %i.fas.fa-home
+        %li 
+          = link_to root_path, class:'user-menu' do
+            News
+          %i.far.fa-comments
+        %li 
+          = link_to new_user_registration_path, class:'user-menu' do
+            Signin
+          %i.fas.fa-plus
+        %li 
+          = link_to new_user_session_path, class:'user-menu' do
+            Login
+          %i.fas.fa-sign-in-alt
+  .header__right
+    .header__right__serch-box
+      = form_tag(root_path, :method => 'get' ) do
+        = text_field_tag :search
+    - if user_signed_in?
+      %button.btn.btn-primary{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button", id: "tweet_btn"} 
+        Tweet
+.main-content
+  - @tweets.each do |tweet|
+    = render partial: "shared/tweet", locals: { tweet: tweet }
+  

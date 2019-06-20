@@ -1,0 +1,12 @@
+- if user_signed_in?
+	.under-content
+		Who to follow
+		- @users.each do |user|
+			- if Relationship.exists?(user_id: current_user.id, follow_id: user.id)
+			- else
+				%ul.list-group
+					%li.list-group-item
+						= image_tag user.avatar
+						.text
+							= user.name
+						= render 'relationships/follow_button', user: user

@@ -1,0 +1,11 @@
+.content
+	- @all_ranks.each do |tweet|
+		%ul.list-group
+			%li.list-group-item
+				= image_tag tweet.user.avatar
+				.name
+					=tweet.user.name
+				.text
+					= tweet.text
+				.time
+					= time_ago_in_words(tweet.created_at)+" ago"

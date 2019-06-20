@@ -1,0 +1,16 @@
+.card
+	.user-menu
+		= image_tag tweet.user.avatar
+		.user-menu__name
+			= tweet.user.name
+		= render 'relationships/follow_button', user: tweet.user
+		.user-menu__time
+			= time_ago_in_words(tweet.created_at)+" ago"
+	.card-body
+		%blockquote.blockquote.mb-0
+			= simple_format(tweet.text)
+			= image_tag tweet.image.url if tweet.image.present?
+	= render 'shared/like', tweet: tweet
+		
+
+

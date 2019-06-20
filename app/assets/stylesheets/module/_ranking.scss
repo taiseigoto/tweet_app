@@ -1,0 +1,46 @@
+.content{	
+	ul.list-group{
+		width: 100px;
+		height: 90px;
+		margin-top: 20px;
+		li.list-group-item{
+			font-size: 15px;
+			width: 320px;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+			position: relative;
+			img{
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				position: absolute;
+				left: 5px;
+				top: 3px;
+			}
+			.name{
+				position: absolute;
+				padding-bottom: 30px;
+				top: 15px;
+				padding-left: 50px;
+			}
+			.text{
+				padding-top: 25px;
+				padding-left: 50px;
+				font-weight: normal;
+				font-size: 13px;
+			}
+			.time{
+				position: absolute;
+				top: 2px;
+				right: 15px;
+				color: #657786;
+				font-weight: normal;
+				padding-left: 25px;
+				font-size: 12px;
+				margin-top: 17px;
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+.header
+  .header__icon
+    %i.fas.fa-frog
+  .header__left
+    - if user_signed_in?
+      %ul
+        %li 
+          = link_to root_path, class:'user-menu'do
+            Home
+          %i.fas.fa-home
+        %li 
+          = link_to user_path(current_user.id), class:'user-menu' do
+            Mypg
+          %i.far.fa-comments
+        %li 
+          = link_to edit_user_registration_path, class:'user-menu' do
+            Edit
+          %i.fas.fa-user-alt
+        %li 
+          = link_to destroy_user_session_path, method: :delete,class:'user-menu' do
+            Logout
+          %i.fas.fa-sign-out-alt
+    - else
+      %ul
+        %li 
+          = link_to root_path, class:'user-menu'do
+            Home
+          %i.fas.fa-home
+        %li 
+          = link_to new_user_registration_path, class:'user-menu' do
+            Mypg
+          %i.far.fa-comments
+        %li 
+          = link_to new_user_registration_path, class:'user-menu' do
+            Signin
+          %i.fas.fa-plus
+        %li 
+          = link_to new_user_session_path, class:'user-menu' do
+            Login
+          %i.fas.fa-sign-in-alt
+  .header__right
+    .header__right__serch-box
+      .chat-group-form__field--right
+        .chat-group-form__field.clearfix
+    .chat-group-form__field--right
+      .chat-group-form__search.clearfix
+        %input#user-search-field.chat-group-form__input{placeholder:"Search for user", type:"text"}/
+        #user-search-result
+          
+    - if user_signed_in?
+      %button.btn.btn-primary{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button", id: "tweet_btn"} 
+        Tweet
+.main-content
+  - if user_signed_in?
+    .content-prof
+      .content__content-menu
+        .content__content-menu__user__menu
+          .content__content-menu__user__menu__ava
+            = image_tag current_user.avatar
+          .content__content-menu__user__menu__name
+            = current_user.name
+        .content__content-menu__follow
+          %ul
+            %li 
+              Tweets
+              = link_to user_path(current_user.id), class:'num' do
+                = current_user.tweets.count
+            %li
+              Following
+              .num
+                = current_user.followings.count
+            %li 
+              Followers
+              .num
+                = current_user.followers.count
+  .main-content__under-content
+    = render partial: "shared/user_list", locals:{user: @users}
+  .main-content__content-center
+    - @tweets.each do |tweet|
+      = render partial: "shared/tweet", locals: { tweet: tweet }
+      -# = paginate(@tweets)
+  .main-content__right
+    Trend tweets for you
+    .main-content__right__text
+      like order
+    = render partial: "shared/ranking", locals: { tweet: @tweet }
+  %p#pageTop
+    %a{:href => "#"}
+      %i.fas.fa-chevron-up
+#myModal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %h4.modal-title Compose new Tweet
+      .modal-body 
+        = form_for @tweet do |f|
+          = f.text_area :text
+          = f.submit "Tweet",class:"send_btn"
+          .modal-body__under
+            = f.label :image, class: '.modal-body__under__img' do
+              %i.far.fa-image
+              = f.file_field :image, class: 'hidden'
