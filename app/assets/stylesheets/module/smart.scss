@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 479px) { 
+	.header{
+		.header__icon{
+			display: none;
+		}
+	}
+	.main-content {
+	background-color:  #e6ecf0;
+	width: 100%;
+	.content-prof{
+		display: none;
+	}
+	.main-content__right{
+		display: none;
+	 }
+	 .main-content__under-content{
+		 display: none;
+	 }
+	}
+	.card{
+		width: 400px;
+		margin-top: 0;
+	}
+
+	
+}
