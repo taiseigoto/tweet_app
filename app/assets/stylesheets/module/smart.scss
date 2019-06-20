@@ -18,7 +18,9 @@
 		#tweet_btn{
 			position: absolute;
 			margin-left: 10px;
-			width: 65px;
+			width: 70px;
+			font-weight: bold;
+			
 		}
 	.chat-group-form__field--right{
 		display: none;
@@ -57,3 +59,10 @@
 	 		}
 		}
 	}
+	.follows{
+		height: 20px;
+	}
+	.follow-now{
+		height: 20px;
+	}
+
