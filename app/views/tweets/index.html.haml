@@ -94,7 +94,7 @@
         %h4.modal-title Compose new Tweet
       .modal-body 
         = form_for @tweet do |f|
-          = f.text_area :text
+          = f.text_area :text,class:"form-control"
           = f.submit "Tweet",class:"send_btn"
           .modal-body__under
             = f.label :image, class: '.modal-body__under__img' do
