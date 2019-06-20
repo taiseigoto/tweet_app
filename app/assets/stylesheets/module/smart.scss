@@ -1,11 +1,27 @@
 
 @media screen and (max-width: 479px) { 
 	.header{
+		width: 400px;
 		.header__icon{
 			display: none;
 		}
+	.header__left{
+		ul{
+			padding-left: 0px;
+		li{
+			font-size: 12px;
+			}
+		}
+	}
 	.header__right{
+		position: relative;
+		#tweet_btn{
+			position: absolute;
+			width: 65px;
+		}
+	.chat-group-form__field--right{
 		display: none;
+		}
 	}
 	}
 	.main-content {
@@ -31,6 +47,4 @@
 			}
 		}
 	}
-
-	
 }
