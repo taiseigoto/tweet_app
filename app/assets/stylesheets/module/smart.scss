@@ -17,6 +17,7 @@
 		position: relative;
 		#tweet_btn{
 			position: absolute;
+			margin-left: 10px;
 			width: 65px;
 		}
 	.chat-group-form__field--right{
@@ -49,10 +50,14 @@
 	}
 }
 #myModal.modal.fade{
+	.modal-dialog{
+		.modal-content{
 	.modal-body {
 		textarea{
-			width: 395px;
+			width: 395px!important;
 			height: 150px;
+				}
+	 		}
 		}
 	}
 }
