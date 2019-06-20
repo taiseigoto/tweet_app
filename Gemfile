@@ -74,6 +74,9 @@ gem 'jquery-turbolinks'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'pry-rails'
+gem 'fog-aws'
+gem 'dotenv-rails'
+gem 'aws-sdk-s3', require: false
 
 group :production do
   gem 'pg'
