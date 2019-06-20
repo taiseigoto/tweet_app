@@ -4,7 +4,7 @@ $(function(){
 		var html = `<div class ="chat-group-user clearfix">
 								<div class= "user-box">	
 								<img src="${user.avatar}">
-								<a href="http://localhost:3000/users/${user.id}"></a>
+								<a href="http://frog-chat.herokuapp.com/users/${user.id}"></a>
 								<p class ="chat-group-user__name">${user.name}</p>
 								</div>
 								<div class ="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}"></div>
