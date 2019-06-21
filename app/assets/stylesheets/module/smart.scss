@@ -10,14 +10,18 @@
 			padding-left: 0px;
 		li{
 			font-size: 12px;
+			padding-left: 7px;
+			i{
+				left: 0;
+			}
 			}
 		}
 	}
 	.header__right{
 		position: relative;
+		width: 0px;
 		#tweet_btn{
 			position: absolute;
-			margin-left: 10px;
 			width: 70px;
 			font-weight: bold;
 			
