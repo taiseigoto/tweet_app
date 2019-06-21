@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 375px) { 
 	.header{
 		width: 375px;
@@ -13,7 +12,7 @@
 			padding-left: 10px;
 			i{
 				left: 0;
-			}
+				}
 			}
 		}
 	}
@@ -28,8 +27,8 @@
 		}
 	.chat-group-form__field--right{
 		display: none;
+			}
 		}
-	}
 	}
 	.main-content {
 	background-color:  #e6ecf0;
@@ -37,7 +36,7 @@
 
 	.content-prof{
 		display: none;
-	}
+		}
 	.main-content__right{
 		display: none;
 	 }
@@ -72,5 +71,16 @@
 		height: 20px;
 		font-size: 15px;
 		font-weight: bold;
+	}
+	field-box{
+		width: 400px;
+		height: 100%;
+		margin-left: 13px;
+		h2{
+			padding-top: 120px;
+			padding-bottom: 10px;
+			font-weight: bold;
+			color: #55c500;
+		}	
 	}
 
