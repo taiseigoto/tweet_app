@@ -12,6 +12,9 @@ body {
 	display: flex;
 	position: fixed;
 	z-index: 1;
+	// .button__icon{
+	// 	display: none;
+	// }
 	&__left{
 		ul{
 			display: inline-block;
@@ -50,13 +53,13 @@ body {
 				}
 				a:hover:after {
 					color: #55c500;
-					width: 100%;
+					width: 140%;
 					border-bottom: 3px solid #55c500;
 				}
 				.user-menu{
 					text-decoration: none;
 					color: gray;
-					padding-right:10px;
+					padding-right:5px;
 				}
 			}
 			li:last-child{

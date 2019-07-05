@@ -6,7 +6,7 @@
 			- else
 				%ul.list-group
 					%li.list-group-item
-						= image_tag user.avatar
+						-# = image_tag user.avatar
 						.text
 							= user.name
 						= render 'relationships/follow_button', user: user
