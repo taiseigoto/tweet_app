@@ -58,9 +58,6 @@
     - if user_signed_in?
       %button.btn.btn-primary{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button", id: "tweet_btn"} 
         Tweet
-    -# - else
-    -#   .button__icon
-    -#     %i.fas.fa-frog
 .main-content
   - if user_signed_in?
     .content-prof
@@ -89,7 +86,6 @@
   .main-content__content-center
     - @tweets.each do |tweet|
       = render partial: "shared/tweet", locals: { tweet: tweet }
-      -# = paginate @tweets_paginate
   .main-content__right
     Trend tweets for you
     .main-content__right__text
