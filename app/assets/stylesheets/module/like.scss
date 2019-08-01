@@ -1,14 +1,50 @@
 .iine__button{
-	line-height: 42px;
+	display: flex;
+	align-items: center;
 	color: gray;
-	font-size: 14px;
-	display: inline-block;
-	padding: 0 18px;
-	border-radius: 100px;
-	font-weight: bold;
-	i{
+	margin-bottom: 4px;
+	margin-left: 5px;
+	.fa-heart{
 		color: red;
-		background: url(http://nelog.jp/wp-content/uploads/2016/03/heart_animation.png) no-repeat;
+		margin-bottom: 3px;
+		margin-left: 5px;
+		text{
+			margin-left: 5px;
+		}
+	}
+	// #heart-box__heart{
+  //   background-image: url(http://nelog.jp/wp-content/uploads/2016/03/heart_animation.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 2900%;
+  //   height: 50px;
+  //   width: 50px;
+  //   -ms-transform: translate(-50%,-47.5%);
+	// 	transform: translate(-50%,-47.5%);
+	// 	position: absolute;
+	// 	bottom: -33px;
+	// 	left: 20px;
+	// }
+	// #heart-box__heart:active{
+	// 	background-position: -2800px 0;
+	// 	transition: background 1s steps(28);
+	// }
+	// .heart-box__heart:active:after{
+	// 	background-position: -2800px 0;
+	// 	-webkit-transition: background 1s steps(28);
+	// 	transition: background 1s steps(28);
+	// }
+	.heart-box__count{
+		margin-left: 35px;
+		margin-bottom: 3px;
+		color: gray;
+	}
+}
+.iine__button-before{
+	margin-bottom: 3px;
+	margin-left: 5px;
+	.fa-heart{
+		color: gray;
+		margin-left: 5px;
 	}
 }
 

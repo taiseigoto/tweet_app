@@ -1,0 +1,27 @@
+.follower-box{
+	width: 250px;
+	height: 80px;
+	background-color: white;
+	border-radius: 5px;
+	font-weight: normal;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	margin-top: 10px;
+	.main-content__right__name{
+		width: 150px;
+		height: 80px;
+		margin:  0 auto;
+		text-align: center;
+		font-size: 15px;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+		&__image{
+			margin-left: 35px;
+		img{
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			}
+		}
+	}
+}

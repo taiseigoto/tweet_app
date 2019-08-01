@@ -1,10 +1,10 @@
 class TweetsController < ApplicationController
+
   def index
     @tweets = Tweet.includes(:user).order("created_at DESC")
-    # @tweets = Kaminari.paginate_array(@tweets).page(params[:page]).per(10)
+    # @tweets_paginate = @tweets.page(params[:page]).per(10)
     @tweet = Tweet.new
     @all_ranks = Tweet.find(Like.group(:tweet_id).order('count(tweet_id) desc').limit(10).pluck(:tweet_id))
-    
 
     if user_signed_in?
       @users = User.where.not(id: current_user.id).order("created_at DESC")
@@ -14,7 +14,6 @@ class TweetsController < ApplicationController
           format.json
       end
     end
-
   end
 
   def create
@@ -44,7 +43,6 @@ class TweetsController < ApplicationController
   end
 
   def search
-    
   end
 
 private

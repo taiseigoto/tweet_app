@@ -54,4 +54,12 @@
     = render partial: "shared/prof"
   - @tweets.each do |tweet|
     = render partial: "shared/tweet", locals: { tweet: tweet }
+  .main-content__right
+    Your Followers
+    - @user_followers.each do |follower|
+      .follower-box
+        .main-content__right__name
+          = follower.name
+          .main-content__right__name__image
+            = image_tag follower.avatar
   

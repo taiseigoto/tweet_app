@@ -12,9 +12,9 @@
 					= @users.tweets.count
 			%li
 				Following
-				.num
+				= link_to user_path(@users.id), class:'num' do
 					= @users.followings.count
 			%li 
 				Followers
-				.num
+				= link_to user_path(@users.id), class:'num' do
 					= @users.followers.count
