@@ -1,8 +1,7 @@
 class TweetsController < ApplicationController
 
   def index
-    @tweets = Tweet.includes(:user).order("created_at DESC")
-    # @tweets_paginate = @tweets.page(params[:page]).per(10)
+    @tweets = Tweet.per_page_kaminari(params[:page]).per(5).includes(:user).order("created_at DESC")
     @tweet = Tweet.new
     @all_ranks = Tweet.find(Like.group(:tweet_id).order('count(tweet_id) desc').limit(10).pluck(:tweet_id))
 

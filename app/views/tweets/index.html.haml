@@ -86,6 +86,7 @@
   .main-content__content-center
     - @tweets.each do |tweet|
       = render partial: "shared/tweet", locals: { tweet: tweet }
+    = paginate @tweets
   .main-content__right
     Trend tweets for you
     .main-content__right__text
