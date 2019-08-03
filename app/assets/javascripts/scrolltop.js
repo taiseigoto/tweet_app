@@ -22,7 +22,8 @@ $(function(){
 		if ( (scrollHeight - scrollPosition) / scrollHeight <= 2.0) {
 					$('.main-content__content-center').jscroll({
 						contentSelector: '.main-content__content-center',
-						nextSelector: 'span.next:last a'
+						nextSelector: 'span.next:last a',
+						loadingHtml: '<i class="fa fa-spinner" style= "color:#55c500; font-weight: bold; font-size: 20px; ">Now Loading...</i>'
 					});
 				}
 		});
