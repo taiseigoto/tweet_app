@@ -23,7 +23,7 @@ $(function(){
 					$('.main-content__content-center').jscroll({
 						contentSelector: '.main-content__content-center',
 						nextSelector: 'span.next:last a',
-						loadingHtml: '<i class="fa fa-spinner" style= "color:#55c500; font-weight: bold; font-size: 20px; ">Now Loading...</i>'
+						loadingHtml: '<i class="fa fa-spinner" style= "color:#55c500; font-weight: bold; font-size: 50px;margin-left: 20px; "></i>'
 					});
 				}
 		});
