@@ -45,3 +45,63 @@
 				}
 		}
 	}
+.edit-box{
+	width: 500px;;
+	height: 100%;
+	margin: 0 auto;
+	font-weight: bold;
+	h3{
+		padding-top: 70px;
+		padding-bottom: 10px;
+		font-weight: bold;
+		color: #55c500;
+	}	
+input#user_email{
+		margin-bottom: 5px;
+		width: 350px;
+		height: 35px;
+		border-radius: 10px;
+		border: 1px solid #ccc;
+}
+input#user_password{
+	margin-bottom: 5px;
+	width: 350px;
+	height: 35px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+input#user_password_confirmation{
+	margin-bottom: 5px;
+	width: 350px;
+	height: 35px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+input#user_current_password{
+	margin-bottom: 5px;
+	width: 350px;
+	height: 35px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+.actions{
+	input{
+		margin-top: 20px;
+		height: 35px;
+		width: 350px;
+		background-color: #55c500;
+		border: none;
+		border-radius: 10px;
+		font-weight: bold;
+		color: white;
+		}
+	}
+	#user_avatar{
+		border: none;
+		border-radius: 15px;
+		background-color: #55c500;
+		font-weight: bold;
+		margin-top: 10px;
+		width: 350px;
+		}
+}
