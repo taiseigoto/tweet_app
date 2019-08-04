@@ -126,7 +126,7 @@ body {
 	justify-content: center;
 	position: relative;
 	.main-content__right{
-		position: absolute;
+		position: fixed;
 		top: 100px;
 		right: 130px;
 		font-weight: bold;

@@ -8,6 +8,10 @@
 		display: inline-block;
 		text-decoration: none;
  }
+ text:before{
+	display: inline-block;
+	 text-decoration: none;
+ }
  
 	.fa-heart{
 		color: red;
@@ -47,6 +51,9 @@
 .iine__button-before{
 	margin-bottom: 3px;
 	margin-left: 5px;
+	display: inline-block;
+	 text-decoration: none;
+	
 	.fa-heart{
 		color: gray;
 		margin-left: 5px;

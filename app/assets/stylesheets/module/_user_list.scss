@@ -1,8 +1,8 @@
 .under-content{
 	float: left;
-	position: absolute;
+	position: fixed;
 	margin-top: 200px;
-	padding-left: 60px;
+	padding-left: 50px;
 	font-weight: bold;
 	font-size: 25px;
 	ul.list-group{
@@ -10,7 +10,7 @@
 		height: 90px;
 		li.list-group-item{
 			font-size: 15px;
-			width: 300px;
+			width: 320px;
 			height: 80px;
 			list-style: none;
 			display: flex;
@@ -30,7 +30,7 @@
 			background-color: #55c500;
 			border-radius: 10px;
 			width: 70px;
-			margin-left: 30px;
+			margin-left: 40px;
 			font-size: 5px;
 			color: white;
 			font-weight: bold;

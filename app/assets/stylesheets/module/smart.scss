@@ -57,34 +57,40 @@
 			}
 		}
 	}
-}
-#myModal.modal.fade{
-	.modal-dialog{
-		.modal-content{
-	.modal-body {
-				}
-	 		}
+	#pageTop a{
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+	#myModal.modal.fade{
+		.modal-dialog{
+			.modal-content{
+		.modal-body {
+					}
+				 }
+			}
 		}
-	}
-	.follows{
-		height: 20px;
-		font-size: 15px;
-		font-weight: bold;
-	}
-	.follow-now{
-		height: 20px;
-		font-size: 15px;
-		font-weight: bold;
-	}
-	.field-box{
-		width: 400px;
-		height: 100%;
-		margin-left: 13px;
-		h2{
-			padding-top: 70px;
-			padding-bottom: 10px;
+		.follows{
+			height: 20px;
+			font-size: 15px;
 			font-weight: bold;
-			color: #55c500;
-		}	
-	}
+		}
+		.follow-now{
+			height: 20px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.field-box{
+			width: 400px;
+			height: 100%;
+			margin-left: 13px;
+			h2{
+				padding-top: 70px;
+				padding-bottom: 10px;
+				font-weight: bold;
+				color: #55c500;
+			}	
+		}
+}
+
 
