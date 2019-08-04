@@ -7,5 +7,6 @@
 					=tweet.user.name
 				.text
 					= tweet.text
+					%a{:href => "http://frog-chat.herokuapp.com/users/#{tweet.user.id}"}
 				.time
 					= time_ago_in_words(tweet.created_at)+" ago"

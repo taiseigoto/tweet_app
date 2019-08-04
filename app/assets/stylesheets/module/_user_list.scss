@@ -17,6 +17,8 @@
 			align-items: center;
 			left: 10;
 			font-weight: bold;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+			transition: all 0.3s ease 0s;
 		}
 		img{
 			height: 70px;
@@ -37,4 +39,8 @@
 			border:none;
 		}
 	}
+}
+li.list-group-item:hover{
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.1875em);
 }
