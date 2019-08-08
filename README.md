@@ -2,8 +2,8 @@
 
 TwitterをモチーフとしたSNSサービス
 
-URL: https://frog-chat.herokuapp.com/
-テストメールアドレス：test@test
+URL: https://frog-chat.herokuapp.com/  
+テストメールアドレス：test@test  
 テストパスワード：12345678
 
 ruby (2.5.1)/Rails (5.2.3)
