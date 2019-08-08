@@ -1,26 +1,27 @@
-# README
+# FrogChat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TwitterをモチーフとしたSNSサービス
 
-Things you may want to cover:
+URL: https://frog-chat.herokuapp.com/
+テストメールアドレス：test@test
+テストパスワード：12345678
 
-* Ruby version
+ruby (2.5.1)/Rails (5.2.3)
 
-* System dependencies
+実装機能/技術一覧
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+・ユーザー管理機能(ユーザー登録/ログイン/ログアウト)
+・ユーザー編集機能 (メールアドレス変更/パスワード変更)
+・投稿機能 (新規作成/編集)
+・非同期通信(Ajax+jQuery)いいね機能 (いいね/いいね解除)
+・ユーザーに対するインクリメンタルサーチ機能(Ajax+jQuery)
+・モーダルウインドウによる新規ツイート投稿画面(Bootstrap)
+・インフィニティスクロール機能(jQuery)
+・フォロー機能(フォロー、フォロー解除)
+・プロフィール写真アップロード機能
+・他デバイス上でのレスポンシブ設定(iphoneX)
+・デプロイ(heroku+S3)
+・データベース(PostgreSQL)
 
 * ...
-# tweet_app
-# tweet_app
+
