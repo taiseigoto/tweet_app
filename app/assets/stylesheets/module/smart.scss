@@ -1,4 +1,32 @@
 @media screen and (max-width: 375px) { 
+	.start p {
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+		z-index: 9999;
+		width: 280px;
+		i{
+			font-size: 50px;
+			color:  #55c500;
+			position: absolute;
+			width: 70px;
+			height: 100px;
+			top:  0;
+			bottom:  0;
+			left:  0;
+			right:  0;
+			margin:  auto;
+			animation: key1 infinite alternate;
+			animation-duration: 1s;
+			transition-delay: 190ms;
+			@keyframes key1{
+				0% {transform: translateY(0px);}
+				100% {transform: translateY(5px);}
+			}
+		}
+	}
 	.header{
 		width: 375px;
 		.header__icon{
