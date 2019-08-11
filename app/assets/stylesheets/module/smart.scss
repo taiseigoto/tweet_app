@@ -119,6 +119,25 @@
 				color: #55c500;
 			}	
 		}
+		.card-body{
+			padding-bottom: 0;
+			position: relative;
+			img{
+				position: absolute;
+				top: 0;
+				right: 15px;
+				width: 80px;
+				height: 45px;
+				padding-left: 60px;
+				padding-right: 30px;
+			}
+			.blockquote{
+				padding-left: 15px;
+				p{
+					font-size: 15px;
+				}
+			}
+		}
 }
 
 
