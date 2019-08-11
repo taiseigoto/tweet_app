@@ -9,8 +9,6 @@
 	.card-body
 		%blockquote.blockquote.mb-0
 			= simple_format(tweet.text)
-			= image_tag tweet.image.url if tweet.image.present?
+			.imgbox
+				= image_tag tweet.image.url if tweet.image.present?
 	= render 'shared/like', tweet: tweet
-		
-
-
