@@ -65,7 +65,9 @@
 	.main-content {
 	// background-color:  #e6ecf0;
 	width: 375px;
-
+	.main-content__content-center{
+		padding-bottom: 0px;
+	}
 	.content-prof{
 		display: none;
 		}
@@ -75,9 +77,6 @@
 	 .main-content__under-content{
 		 display: none;
 	 }
-	}
-	.main-content__content-center{
-		padding-bottom: 0px;
 	}
 	.card{
 		width: 375px;
